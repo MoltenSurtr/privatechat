@@ -5,7 +5,7 @@
  */
 const output = "What's your perfect first date?"
     .split("")
-    .map(char => parseInt(char))
+    .map(parseInt)
     .filter(a => a)
     .reduce((a, b) => a + b)
     .toString()
